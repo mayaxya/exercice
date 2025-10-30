@@ -1,5 +1,9 @@
 
-const fizzbuzz = require('./fizzbuzz');
+const fizzbuzz = require('./fizzbuzz'); // question sur syntaxe, why const ?
+
+//comment ne pas avoir a l'ecrire for each ?
+//
+
 
 test("donne suite nombre jusqu'a 1", ()=>{
 	expect(fizzbuzz(1)).toBe(1)
