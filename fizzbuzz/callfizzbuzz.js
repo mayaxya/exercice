@@ -1,5 +1,6 @@
 const fizzbuzz = require('./fizzbuzz');
 
+
 function main (x) {
 	const arr = []
 	let i = 1
@@ -9,4 +10,7 @@ function main (x) {
 	}
 	return (arr)
 }
-console.log(main(15))
+module.exports = main;
+let n = process.argv
+
+console.log(main(n[2]))
