@@ -1,16 +1,31 @@
 const fizzbuzz = require('./fizzbuzz');
-
+//recup fizzbuzz function
 
 function main (x) {
-	const arr = []
 	let i = 1
 	while (i<=x){
-		arr.push(fizzbuzz(i))
+		console.log (fizzbuzz(i))
 		i+=1
 	}
-	return (arr)
 }
-module.exports = main;
-let n = process.argv
 
-console.log(main(n[2]))
+let n = process.argv
+ main(n[2])
+// run main function in CLI with "node callfizzbuzz.js n" with n being the number until wich we wanna go
+
+
+
+const testable = (x, main) => {
+	let result = []
+	result.push(main(n))
+	return (result)
+}
+
+testable(n[2],main)
+
+
+
+//module.exports = main;
+// in case needed for test
+
+
