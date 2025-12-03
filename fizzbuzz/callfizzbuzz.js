@@ -15,7 +15,7 @@ let n = process.argv
 
 
 
-const testable = (x, main) => {
+const testable = (n, main) => {
 	let result = []
 	result.push(main(n))
 	return (result)
@@ -25,7 +25,7 @@ testable(n[2],main)
 
 
 
-//module.exports = main;
+module.exports = main;
 // in case needed for test
 
 
